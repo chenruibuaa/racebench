@@ -6,7 +6,7 @@
  * Copyright © 2019年 Beijing Sunwise Information Technology Ltd. All rights reserved.
  * [说明]:
  * 主程序入口:svp_simple_007_001_main
- * 中断入口:svp_simple_001_007_isr_1
+ * 中断入口:svp_simple_007_001_isr_1
  * 中断优先级以数字作为标准，越大优先级越高。
  *
  *
