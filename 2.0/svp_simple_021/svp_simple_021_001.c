@@ -4,10 +4,10 @@
  * Template File:svp_simple_021
  * Created by Beijing Sunwise Information Technology Ltd. on 19/10/30.
  * Copyright © 2019年 Beijing Sunwise Information Technology Ltd. All rights reserved.
- *
- *
- *
- *
+ * [说明]:
+ * 主程序入口:svp_simple_021_001_main
+ * 中断入口:svp_simple_021_001_isr_1
+ * 中断优先级以数字作为标准，越大优先级越高。
  *
  *
  *
