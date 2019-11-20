@@ -22,8 +22,8 @@ volatile int *svp_simple_009_001_q;
 volatile int *svp_simple_009_001_m;
 
 void svp_simple_009_001_main() {
+  init();
   int svp_simple_009_001_local_var1 = 0x01;
-
   int svp_simple_009_001_local_var2 = 0x09;
 
   svp_simple_009_001_p = &svp_simple_009_001_local_var1;
