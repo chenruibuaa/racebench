@@ -29,7 +29,7 @@ volatile int svp_simple_019_001_global_var2;
 
 void svp_simple_019_001_main() {
   int reader1, reader2, reader3, reader4, reader5;
-
+  init();
   svp_simple_019_001_global_para1 = rand() % 10;
   svp_simple_019_001_global_para2 = rand() % 10;
   svp_simple_019_001_global_para3 = rand() % 10;
