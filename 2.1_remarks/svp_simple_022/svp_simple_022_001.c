@@ -66,13 +66,12 @@ void svp_simple_022_001_isr_1() {
   svp_simple_022_001_global_var1 = 0; 
 }
 
-// bug点：
-// 1.svp_simple_022_001_global_var1 <W, #32>, <W,#66>, <R,#55>
-// 2.svp_simple_022_001_global_var1 <R, #55>, <W,#66>, <R,#56>
-// 3.svp_simple_022_001_global_var1 <R, #55>, <W,#66>, <R,#58>
-// 4.svp_simple_022_001_global_var1 <R, #55>, <W,#66>, <R,#63>
-// 5.svp_simple_022_001_global_var1 <R, #58>, <W,#66>, <R,#63>
-// 6.svp_simple_022_001_global_var1 <R, #63>, <W,#66>, <R,#39>
+// 1: svp_simple_022_001_global_var1 <W, #32>, <W,#66>, <R,#55>
+// 2: svp_simple_022_001_global_var1 <R, #55>, <W,#66>, <R,#58>
+// 3: svp_simple_022_001_global_var1 <R, #58>, <W,#66>, <R,#63>
+// 4: svp_simple_022_001_global_var1 <R, #63>, <W,#66>, <R,#39>
 
-// 误报点：
-// 1.svp_simple_022_001_global_var1 <W, #35>, <W,#66>, <R,#42>
+// 可能误报
+// 1: svp_simple_022_001_global_var1 <W, #32>, <W,#66>, <R,#39>
+// 2: svp_simple_022_001_global_var1 <R, #55>, <W,#66>, <R,#56>
+// 3: svp_simple_022_001_global_var1 <R, #55>, <W,#66>, <R,#63>
