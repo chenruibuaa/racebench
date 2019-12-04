@@ -46,13 +46,19 @@ void svp_simple_019_001_main() {
   idlerun();
   disable_isr(1);
   if ((svp_simple_019_001_global_condition1 == 1) && (svp_simple_019_001_global_condition3 == 1))
+  {
+    enable_isr(1);
     reader4 = svp_simple_019_001_global_var1;
-  enable_isr(1);
+  }
+
   idlerun();
   disable_isr(1);
   if ((svp_simple_019_001_global_condiiton2 == 1) && (svp_simple_019_001_global_condition3 == 0))
+  {
+    enable_isr(1);
     reader5 = svp_simple_019_001_global_var1;
-  enable_isr(1);
+  }
+
 }
 
 void svp_simple_019_001_isr_1() {
